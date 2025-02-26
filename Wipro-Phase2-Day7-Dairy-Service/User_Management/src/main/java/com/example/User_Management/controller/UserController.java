@@ -22,15 +22,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @Autowired
     private UserRepository userRepository;
+
 
     @Autowired
     private AuthenticationManager authenticationManager;
 
+
     @Autowired
     private JwtUtil jwtUtil;
-
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestBody UserInfo userInfo) {
